@@ -42,9 +42,7 @@ public class Player : MonoBehaviour
     {
         //this is to help check if grounded
         isgrounded = Physics2D.OverlapCircle(groundcheck.position, checkradius, whatisground);
-
-
-
+        
 
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
